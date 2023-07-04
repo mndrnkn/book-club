@@ -7,7 +7,75 @@
 }
 
 .main {
-  max-width: var(--max-width);
+  width: var(--max-width);
+  max-width: 100%;
+  background-color: #D3D9E9;
+  padding: 64px;
+  border-radius: 32px;
+}
+
+.dateSetter {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+}
+
+.currentReading {
+  margin-bottom: 32px;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+  margin-bottom: 32px;
+}
+
+
+.memberGroup ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style-type: none;
+}
+
+.members li {
+  display: flex;
+  gap: 4px;
+}
+
+.breakouts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.counter {
+  font-size: 120px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;;
+  border: solid 1px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+
+
+
+@media (max-width: 768px) {
+.dateSetter {
+ display: none;
+}
 }
 
 
